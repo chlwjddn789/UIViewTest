@@ -9,10 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var mySubView: UIView!
+    @IBOutlet weak var myLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor.yellow
+        
+        print(myLabel.text!)
+        myLabel.text = "hello iphone"
+        
+        mySubView.backgroundColor = UIColor.red
     }
 
 
